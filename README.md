@@ -108,17 +108,3 @@ All colours are defined as Tailwind v4 `@theme` CSS variables in `src/index.css`
 | Body copy / card descriptions                      | `#8099B3` | Readable, secondary |
 | Eyebrow labels / step numbers                      | `#4A6580` | Structural, legible |
 | Decorative chrome (copyright, moniker, topbar URL) | `#3D5266` | Intentionally dim   |
-
----
-
-## V2 changes from V1 (March 2026)
-
-- **Hero reframed**: platform shell visual showing 3 skill slots (CareerClaw LIVE, ScrapeClaw SOON, InvestClaw LATER) — ClawOS is the frame, not just a CareerClaw card.
-- **Hero copy**: "One platform. Purpose-built AI skills." — platform leads.
-- **Job examples broadened**: Healthcare, Finance, Marketing, Operations — not tech-only.
-- **CareerClaw as outreach automation**: Draft generation is the first-listed feature. Workflow strip (Match → Score → Draft → Track) added above feature card.
-- **ClawOS Pro section**: New section. Today/Tomorrow split card. Platform-wide framing.
-- **PlatformSteps + BenefitsGrid merged**: One tighter section, two sub-sections (user journey + architectural differentiators).
-- **Security copy universalised**: Technical controls translated into user-understandable value. No incident-specific references.
-- **FAQ**: Exclusive one-open-at-a-time. Answers trimmed ~40%.
-- **Contrast pass**: Nav links, muted copy, footer links, eyebrows all raised. Chrome stays dim.
