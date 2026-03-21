@@ -29,4 +29,4 @@ jobs:
             exit 1
           fi
 
-          echo "✓
+          echo "✓ Branch name '$SOURCE_BRANCH' is valid."
