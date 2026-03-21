@@ -26,36 +26,24 @@ export function StickyHeader() {
         {/* Logo: claw icon + wordmark lockup */}
         <a href="#" className="shrink-0 flex items-center gap-2.5" aria-label="ClawOS home">
           {/* Claw icon — geometric tines, consistent with app favicon treatment */}
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-            <circle cx="14" cy="14" r="13" stroke="#00D4A1" strokeWidth="1.2" opacity="0.22" />
+          <svg viewBox="0 0 24 26" fill="none" className="w-6 h-6" aria-hidden="true">
             <path
-              d="M14 6C13 8 10.5 10.5 10.5 14c0 2 1 3.5 1 3.5S10 20 9.5 22.5"
+              d="M6 24 C3.5 17 5 10 8 3"
               stroke="#00D4A1"
-              strokeWidth="1.75"
+              strokeWidth="2.8"
               strokeLinecap="round"
-              fill="none"
             />
             <path
-              d="M14 5.5V14c0 2 0 4 0 4s0 2.5 0 4.5"
+              d="M12 25 C10 18 11.5 11 12 3"
               stroke="#00D4A1"
-              strokeWidth="1.75"
+              strokeWidth="2.8"
               strokeLinecap="round"
-              fill="none"
             />
             <path
-              d="M14 6c1 2 3.5 4.5 3.5 8 0 2-1 3.5-1 3.5s1.5 2.5 2 5"
+              d="M18 24 C20.5 17 19 10 16 3"
               stroke="#00D4A1"
-              strokeWidth="1.75"
+              strokeWidth="2.8"
               strokeLinecap="round"
-              fill="none"
-            />
-            <path
-              d="M9.5 22.5Q14 25 18.5 22.5"
-              stroke="#00D4A1"
-              strokeWidth="1.4"
-              strokeLinecap="round"
-              fill="none"
-              opacity="0.65"
             />
           </svg>
           {/* Text lockup */}

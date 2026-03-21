@@ -6,11 +6,11 @@ import { useScrollReveal } from '../hooks/useScrollReveal'
 const FAQS = [
   {
     q: 'What is ClawOS?',
-    a: 'ClawOS is a security-first AI skills platform for professionals. Each skill — like CareerClaw — has its own focused workspace and first-party engine. One account, one platform, access across Web and Telegram.',
+    a: 'ClawOS is a security-first AI skills platform for professionals. Each skill — like CareerClaw — has its own focused workspace and first-party engine. One account, one platform, access across multiple channels.',
   },
   {
     q: 'Is CareerClaw available now?',
-    a: 'Yes. CareerClaw is live on Web and Telegram, free to start. It covers job search and outreach automation: daily ranked briefings, match scoring, application tracking, and draft outreach generation. Pro ($9/month) unlocks deeper intelligence.',
+    a: 'Yes. CareerClaw is live on Web and Telegram, free to start. It covers job search and outreach automation: daily ranked briefings, match scoring, application tracking, and draft outreach generation. ClawOS Pro unlocks deeper intelligence across the platform — starting today with enhanced CareerClaw capabilities.',
   },
   {
     q: 'Do I need Telegram to use ClawOS?',

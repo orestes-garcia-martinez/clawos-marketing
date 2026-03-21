@@ -66,9 +66,10 @@ export function HeroSection() {
               className="text-base sm:text-lg leading-relaxed max-w-[520px]"
               style={{ color: '#8099B3', fontFamily: "'DM Sans', sans-serif" }}
             >
-              ClawOS is the platform shell. Each skill has its own focused workspace, first-party
-              engine, and trusted execution model. One account — accessible on Web today, with
-              Telegram support included. The platform is built to travel across channels as you do.{' '}
+              ClawOS is the platform for focused AI skills. Each skill has its own workspace,
+              first-party engine, and secure foundation. Use ClawOS on Web today, with Telegram
+              support available now. One account, one platform, built to grow across channels as new
+              access points launch.{' '}
               <span style={{ color: '#DDE8F8' }}>
                 CareerClaw — job search and outreach automation — is live now.
               </span>

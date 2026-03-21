@@ -119,7 +119,7 @@ export function PlatformSteps() {
             className="text-3xl sm:text-4xl font-display font-bold tracking-tight max-w-2xl"
             style={{ fontFamily: "'Syne', sans-serif", color: '#DDE8F8' }}
           >
-            One platform. Focused skills. Your workflow.
+            One platform to access and grow. Focused skills to do the work.
           </h2>
           <p
             className="mt-4 text-base max-w-xl"
