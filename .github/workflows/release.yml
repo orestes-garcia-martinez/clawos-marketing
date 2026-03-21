@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    name: Release Please
+    runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
+
+    steps:
+      - name: Create Release
+        id: release
+        uses: googleapis/release-please-action@v4
+        with:
+          release-type: node
+
+  # Optional: Deploy to Vercel on release
+  deploy:
+    name: Deploy Production
+    runs-on: ubuntu-latest
+    needs: release
+    if: ${{ needs.release.outputs.release_created }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy to Vercel
+        run: |
+          echo "🚀 Deploying ${{ needs.release.outputs.tag_name }} to production"
+          # Vercel auto-deploys on push, but you can add explicit deploy here
+          # npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
