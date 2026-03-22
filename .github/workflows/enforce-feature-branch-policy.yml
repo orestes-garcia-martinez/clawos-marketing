@@ -25,7 +25,7 @@ jobs:
           if [[ ! "$SOURCE_BRANCH" =~ $VALID_PREFIXES ]]; then
             echo "::error::Branch '$SOURCE_BRANCH' does not follow the required naming convention."
             echo "::error::PRs to main must come from a branch named: <type>/<name>"
-            echo "::error::Valid types: feat, fix, build, chore, ci, docs, perf, refactor, revert, style, test, claude, codex, dependabot"
+            echo "::error::Valid types: feat, fix, build, chore, ci, docs, perf, refactor, revert, style, test, claude, codex, dependabot, release-please"
             exit 1
           fi
 
