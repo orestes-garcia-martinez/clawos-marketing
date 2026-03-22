@@ -22,10 +22,15 @@ jobs:
 
           VALID_PREFIXES="^(feat|fix|build|chore|ci|docs|perf|refactor|revert|style|test|claude|codex|dependabot)/.+"
 
+          if [[ "$SOURCE_BRANCH" =~ ^release-please-- ]]; then
+            echo "✓ Branch '$SOURCE_BRANCH' is a Release Please branch. Skipping naming convention check."
+            exit 0
+          fi
+
           if [[ ! "$SOURCE_BRANCH" =~ $VALID_PREFIXES ]]; then
             echo "::error::Branch '$SOURCE_BRANCH' does not follow the required naming convention."
             echo "::error::PRs to main must come from a branch named: <type>/<name>"
-            echo "::error::Valid types: feat, fix, build, chore, ci, docs, perf, refactor, revert, style, test, claude, codex, dependabot, release-please"
+            echo "::error::Valid types: feat, fix, build, chore, ci, docs, perf, refactor, revert, style, test, claude, codex, dependabot"
             exit 1
           fi
 
