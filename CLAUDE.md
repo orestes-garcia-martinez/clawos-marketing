@@ -66,11 +66,11 @@ Use `style={{ color: 'var(--color-accent)' }}` or Tailwind utility classes. Neve
 
 ### Fonts
 
-| Role    | Family           |
-| ------- | ---------------- |
-| Display | Syne             |
-| Body    | DM Sans          |
-| Data    | JetBrains Mono   |
+| Role    | Family         |
+| ------- | -------------- |
+| Display | Syne           |
+| Body    | DM Sans        |
+| Data    | JetBrains Mono |
 
 Loaded via Google Fonts in `index.html` with `font-display: swap`.
 
@@ -184,13 +184,13 @@ Pre-commit hooks (Husky) run `lint-staged` (ESLint + Prettier on staged files) a
 
 ## CI checks
 
-| Check        | What runs                                          |
-| ------------ | -------------------------------------------------- |
-| **Security** | Socket.dev firewall + `npm audit` + Snyk CVE scan  |
-| **Quality**  | ESLint + TypeScript typecheck + Prettier           |
-| **Test**     | Vitest unit tests                                  |
-| **E2E**      | Playwright (runs after quality + test pass)        |
-| **Review**   | Claude Code automated PR review (claude-review.yml)|
+| Check        | What runs                                           |
+| ------------ | --------------------------------------------------- |
+| **Security** | Socket.dev firewall + `npm audit` + Snyk CVE scan   |
+| **Quality**  | ESLint + TypeScript typecheck + Prettier            |
+| **Test**     | Vitest unit tests                                   |
+| **E2E**      | Playwright (runs after quality + test pass)         |
+| **Review**   | Claude Code automated PR review (claude-review.yml) |
 
 ---
 
