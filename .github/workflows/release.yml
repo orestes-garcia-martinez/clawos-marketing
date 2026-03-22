@@ -18,10 +18,20 @@ jobs:
       tag_name: ${{ steps.release.outputs.tag_name }}
 
     steps:
+      # Step A: Generate a high-privilege token using your App
+      - name: Generate Token
+        uses: actions/create-github-app-token@v3
+        id: app-token
+        with:
+          app-id: ${{ secrets.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+
+      # Step B: Pass that token to Release Please
       - name: Create Release
         id: release
         uses: googleapis/release-please-action@v4
         with:
+          token: ${{ steps.app-token.outputs.token }}
           release-type: node
 
   # Optional: Deploy to Vercel on release
@@ -33,7 +43,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Deploy to Vercel
         run: |
