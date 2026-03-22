@@ -40,13 +40,14 @@ jobs:
           fi
 
           # 2. Standard naming convention enforcement for human contributors
-          VALID_PREFIXES='^(feat|fix|build|chore|ci|docs|perf|refactor|revert|style|test|dependabot|claude|codex)/[a-z0-9._-]+$'
+          VALID_PREFIXES='^(feat|fix|build|chore|ci|docs|perf|refactor|revert|style|test|dependabot|claude|codex)/[a-z0-9./_-]+$'
 
           if [[ ! "$SOURCE_BRANCH" =~ $VALID_PREFIXES ]]; then
             echo "----------------------------------------------------------------"
             echo "ERROR: Invalid branch name '$SOURCE_BRANCH'"
             echo "Branch names must start with one of the following prefixes:"
             echo "feat/, fix/, build/, chore/, ci/, docs/, perf/, refactor/, revert/, style/, test/, claude/, codex/, or dependabot/"
+            echo "Followed by lowercase alphanumeric characters, dots, slashes, underscores, or hyphens."
             echo "Example: feat/add-new-header"
             echo "----------------------------------------------------------------"
             exit 1
