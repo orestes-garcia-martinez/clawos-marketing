@@ -22,24 +22,16 @@ jobs:
 
           VALID_PREFIXES="^(feat|fix|build|chore|ci|docs|perf|refactor|revert|style|test|claude|codex|dependabot)/.+"
           RELEASE_PLEASE_PATTERN="^release-please--branches--[a-zA-Z0-9._-]+--components--[a-zA-Z0-9._-]+$"
-          RELEASE_PLEASE_ACTORS=("github-actions[bot]" "release-please[bot]")
+
 
           PR_ACTOR="${{ github.actor }}"
 
           if [[ "$SOURCE_BRANCH" =~ $RELEASE_PLEASE_PATTERN ]]; then
-            ACTOR_TRUSTED=false
-            for TRUSTED in "${RELEASE_PLEASE_ACTORS[@]}"; do
-              if [[ "$PR_ACTOR" == "$TRUSTED" ]]; then
-                ACTOR_TRUSTED=true
-                break
-              fi
-            done
-
-            if [[ "$ACTOR_TRUSTED" == true ]]; then
-              echo "✓ Branch '$SOURCE_BRANCH' is a Release Please branch created by trusted actor '$PR_ACTOR'. Skipping naming convention check."
+            if [[ "$PR_ACTOR" =~ \[bot\]$ ]]; then
+              echo "✓ Branch '$SOURCE_BRANCH' is a Release Please branch created by bot actor '$PR_ACTOR'. Skipping naming convention check."
               exit 0
             else
-              echo "::error::Branch '$SOURCE_BRANCH' matches the Release Please pattern but was opened by '$PR_ACTOR', not a trusted bot."
+              echo "::error::Branch '$SOURCE_BRANCH' matches the Release Please pattern but was opened by '$PR_ACTOR', not a bot account."
               exit 1
             fi
           fi
