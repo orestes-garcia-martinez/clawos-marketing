@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.1](https://github.com/orestes-garcia-martinez/clawos-marketing/compare/v1.0.0...v1.0.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* trigger release please test ([2d3dbc7](https://github.com/orestes-garcia-martinez/clawos-marketing/commit/2d3dbc720cc939feae4f331e9cdc586d96187a5a))
+* trigger release please test ([0f07075](https://github.com/orestes-garcia-martinez/clawos-marketing/commit/0f070756ee59d1968ce5e4d0a57768e0a6ef3030))
+* trigger release please test ([c1a7b72](https://github.com/orestes-garcia-martinez/clawos-marketing/commit/c1a7b722f9542e62c7f18f17ec470856030aaf6b))
+* trigger release please test ([085bd32](https://github.com/orestes-garcia-martinez/clawos-marketing/commit/085bd327a287cdc0912d6ff113c83a005a9a639c))
+* trigger release please test ([122c410](https://github.com/orestes-garcia-martinez/clawos-marketing/commit/122c41087ecb049045a83459b55889c53307847b))
+
 ## 1.0.0 (2026-03-22)
 
 ### Features
