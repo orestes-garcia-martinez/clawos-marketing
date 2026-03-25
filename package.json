@@ -55,5 +55,8 @@
     "*.{json,md,yml,yaml}": [
       "prettier --write"
     ]
+  },
+  "overrides": {
+    "picomatch": ">=4.0.4"
   }
 }
