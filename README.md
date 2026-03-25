@@ -108,5 +108,3 @@ All colours are defined as Tailwind v4 `@theme` CSS variables in `src/index.css`
 | Body copy / card descriptions                      | `#8099B3` | Readable, secondary |
 | Eyebrow labels / step numbers                      | `#4A6580` | Structural, legible |
 | Decorative chrome (copyright, moniker, topbar URL) | `#3D5266` | Intentionally dim   |
-
-endnotes
