@@ -23,7 +23,7 @@ jobs:
 
           # Use the PR creator's login instead of the triggering actor
           PR_AUTHOR="${{ github.event.pull_request.user.login }}"
-          TRUSTED_RELEASE_BOT_PATTERN='^github-actions\[bot\]$'
+          TRUSTED_RELEASE_BOT_PATTERN='^clawos-release-bot\[bot\]$'
 
           echo "Checking branch: $SOURCE_BRANCH"
           echo "PR created by: $PR_AUTHOR"
