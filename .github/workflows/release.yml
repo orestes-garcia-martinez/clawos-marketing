@@ -20,7 +20,7 @@ jobs:
     steps:
       # Step A: Generate a high-privilege token using your App
       - name: Generate Token
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@v4
         id: app-token
         with:
           app-id: ${{ secrets.RELEASE_APP_ID }}
